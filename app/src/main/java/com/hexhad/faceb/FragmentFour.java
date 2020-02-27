@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 public class FragmentFour extends Fragment {
 
-    public static  FragmentFour fragmentfour(){
+    public static FragmentFour fragmentfour() {
         FragmentFour fragmentfour = new FragmentFour();
         return fragmentfour;
     }
@@ -20,6 +20,6 @@ public class FragmentFour extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.fragmentfour,container,false);
+        return inflater.inflate(R.layout.fragmentfour, container, false);
     }
 }

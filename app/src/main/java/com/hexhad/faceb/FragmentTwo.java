@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 public class FragmentTwo extends Fragment {
 
-    public static  FragmentTwo fragmenttwo(){
+    public static FragmentTwo fragmenttwo() {
         FragmentTwo fragmenttwo = new FragmentTwo();
         return fragmenttwo;
     }
@@ -20,6 +20,6 @@ public class FragmentTwo extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.fragmenttwo,container,false);
+        return inflater.inflate(R.layout.fragmenttwo, container, false);
     }
 }

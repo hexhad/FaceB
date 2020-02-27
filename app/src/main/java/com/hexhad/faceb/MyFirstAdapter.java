@@ -15,25 +15,28 @@ public class MyFirstAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        switch (position){
-            case 0 : return FragmentOne.fragmentOne();
-            case 1 : return FragmentTwo.fragmenttwo();
-            case 2 : return FragmentThree.fragmentthree();
-            case 3 : return FragmentFour.fragmentfour();
-            default :  return FragmentOne.fragmentOne();
+        switch (position) {
+            case 0:
+                return FragmentOne.fragmentOne();
+            case 1:
+                return FragmentTwo.fragmenttwo();
+            case 2:
+                return FragmentThree.fragmentthree();
+            default:
+                return FragmentOne.fragmentOne();
         }
     }
 
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
 //        return super.getPageTitle(position);
-        return "page" + (position+1);
+        return "page" + (position + 1);
     }
 }
