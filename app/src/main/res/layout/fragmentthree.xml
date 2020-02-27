@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-=======
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
->>>>>>> 0b66b74f653a74adca19d8b05d217df102a89ba0
 
 
+    <AutoCompleteTextView
+        android:id="@+id/searchtext"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="530dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="105dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="530dp"
+        android:text="Name :"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="106dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="451dp"
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="238dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="160dp" />
+
+</RelativeLayout>
