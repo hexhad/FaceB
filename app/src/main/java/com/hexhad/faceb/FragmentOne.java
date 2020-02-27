@@ -18,7 +18,7 @@ public class FragmentOne extends Fragment {
     DatabaseHelper myDb;
 
     Button add, viewall, update, delete;
-    EditText name, age, id;
+    EditText name, age, id,markes;
 
     public static FragmentOne fragmentOne() {
         FragmentOne fragmentOne = new FragmentOne();
@@ -48,12 +48,13 @@ public class FragmentOne extends Fragment {
         delete = view.findViewById(R.id.delete);
         viewall = view.findViewById(R.id.viewAll);
         update = view.findViewById(R.id.update);
+        markes = view.findViewById(R.id.marks);
 
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean isInserted = myDb.insertData(name.getText().toString(), age.getText().toString());
+                boolean isInserted = myDb.insertData(name.getText().toString(), age.getText().toString(),markes.getText().toString());
                 if (isInserted == true) {
                     Toast.makeText(getContext(), "Data Inserted ", Toast.LENGTH_LONG).show();
                 } else {
@@ -76,7 +77,8 @@ public class FragmentOne extends Fragment {
                     while (res.moveToNext()) {
                         buffer.append("id:" + res.getString(0) + "\n");
                         buffer.append("name:" + res.getString(1) + "\n");
-                        buffer.append("age:" + res.getString(2) + "\n\n");
+                        buffer.append("age:" + res.getString(2) + "\n");
+                        buffer.append("markes:" + res.getString(3) + "\n");
                     }
                     //show all
                     showMessage("Data", buffer.toString());
@@ -88,7 +90,7 @@ public class FragmentOne extends Fragment {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean updated = myDb.updateData(id.getText().toString(), name.getText().toString(), age.getText().toString());
+                boolean updated = myDb.updateData(id.getText().toString(), name.getText().toString(), age.getText().toString(),markes.getText().toString());
                 if (updated == true) {
                     Toast.makeText(getContext(), "Data Updated ", Toast.LENGTH_LONG).show();
                 } else {
