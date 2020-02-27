@@ -78,7 +78,7 @@ public class FragmentOne extends Fragment {
                         buffer.append("id:" + res.getString(0) + "\n");
                         buffer.append("name:" + res.getString(1) + "\n");
                         buffer.append("age:" + res.getString(2) + "\n");
-                        buffer.append("markes:" + res.getString(3) + "\n");
+                        buffer.append("markes:" + res.getString(3) + "\n\n");
                     }
                     //show all
                     showMessage("Data", buffer.toString());
