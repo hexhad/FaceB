@@ -18,9 +18,11 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
 
 
+
     ViewPager viewPager;
     MyFirstAdapter adapter;
     TabLayout tabLayout;
+
 
 
     @Override
@@ -30,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.fragment_1);
 
         adapter = new MyFirstAdapter(getSupportFragmentManager());
-        tabLayout = findViewById(R.id.Tab_Layout);
+        tabLayout=findViewById(R.id.Tab_Layout);
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        //to crud
+    //to crud
 
 
 //        addData();
@@ -44,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
 //        deleteData();
 
 
+
     }
+
 
 
 }
