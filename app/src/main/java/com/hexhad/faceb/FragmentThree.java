@@ -29,7 +29,7 @@ public class FragmentThree extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.fragmentthree,container,false);
+        return inflater.inflate(R.layout.fragmenttree,container,false);
     }
 
     @Override
